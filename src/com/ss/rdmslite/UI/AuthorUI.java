@@ -19,8 +19,13 @@ public class AuthorUI {
 		// System.out.println("here");
 		System.out.println("Please enter the number" + "(" + 1 + "-" + authorMenu.length + "): ");
 		// if (scanner.hasNextLine()) {
-
-		inputNum = Integer.parseInt(scanner.nextLine());
+		try {
+			inputNum = Integer.parseInt(scanner.nextLine());
+		}
+		catch (Exception e) {
+			System.err.println("Error");
+		}
+		
 		// }
 		// System.out.println("here1");
 
